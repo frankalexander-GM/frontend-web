@@ -20,6 +20,6 @@ void main() {
 
     expect(find.text('DevPlay'), findsWidgets);
     expect(find.text('Crear'), findsOneWidget);
-    expect(find.text('Inicio'), findsOneWidget);
+    expect(find.text('NoExistoEnLaApp'), findsOneWidget);
   });
 }
