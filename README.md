@@ -8,6 +8,12 @@ es el único backend.
 > generada con `flutter create` (plataformas: web + android). Se corre con
 > `flutter run -d chrome` (web) o se migra a móvil con el Android SDK.
 
+> 🎨 **Diseño = el de la web** (rama `visual` del backend): paleta oscura
+> "papel, tinta y filetes", fuentes Fraunces/Bitter/JetBrains Mono, glass
+> cards, consola CRT, hero ticker, post cards con like + confeti y dock de
+> crear. Por ahora con datos de ejemplo (`lib/models/post.dart`); las
+> funciones de la API las integra el compañero en otra rama.
+
 ## Arquitectura
 
 ```
