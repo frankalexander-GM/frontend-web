@@ -4,9 +4,9 @@ Frontend móvil de **DevPlay** construido con **Flutter**. Reemplaza al
 antiguo frontend de Next.js: la app habla con la **API de FastAPI**, que
 es el único backend.
 
-> ⚠️ **Flutter aún no está instalado en esta máquina.** Este repo queda
-> listo (git + docs). El scaffold (`flutter create .`) se hace cuando se
-> instale el SDK. Se puede reinstalar con: <https://docs.flutter.dev/get-started/install>
+> ✅ **Flutter SDK instalado (3.47.6, stable)** en `C:\src\flutter`. App
+> generada con `flutter create` (plataformas: web + android). Se corre con
+> `flutter run -d chrome` (web) o se migra a móvil con el Android SDK.
 
 ## Arquitectura
 
