@@ -1,0 +1,15 @@
+.git
+.github
+.dart_tool
+build
+android
+ios
+linux
+macos
+windows
+*.iml
+.idea
+.vscode
+Dockerfile
+docker-compose*.yml
+nginx.conf
