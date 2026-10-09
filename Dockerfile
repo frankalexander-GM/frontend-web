@@ -21,6 +21,9 @@ ENV PATH="/opt/flutter/bin:${PATH}" \
     CI=true \
     PUB_CACHE=/root/.pub-cache
 
+# El tarball conserva uid/gid que no coinciden con el usuario del build.
+RUN git config --global --add safe.directory /opt/flutter
+
 WORKDIR /app
 
 # pubspec.lock está en .gitignore, así que no existe en el build context.
