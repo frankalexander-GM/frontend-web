@@ -4,12 +4,13 @@
 FROM ghcr.io/cirruslabs/flutter:stable AS build
 WORKDIR /app
 
-COPY pubspec.yaml pubspec.lock ./
+# pubspec.lock está en .gitignore, así que no existe en el build context.
+COPY pubspec.yaml ./
 RUN flutter pub get
 
 COPY . .
 
-# La URL del backend se inyecta en build (Coolify: Build Variable API_BASE_URL).
+# La URL del backend se inyecta en build (Dokploy: Advanced → Build Arguments).
 ARG API_BASE_URL=http://localhost:8000/api/v1
 RUN flutter build web --release --dart-define=API_BASE_URL=${API_BASE_URL}
 
